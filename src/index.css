@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold-primary: #B88E38;
+    --gold-light: #F7EBD0;
+    --gold-dark: #7A5B18;
+    --gold-metallic: linear-gradient(135deg, #D4AF37 0%, #B88E38 40%, #946E20 70%, #F5E5C0 100%);
+    --bg-cream: #FAF7F2;
+    --bg-card: #FFFFFF;
+    --text-primary: #1C1814;
+    --text-secondary: #6B6258;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #FAF7F2;
+    color: #1C1814;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-script {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-syne {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Refined Warm Gold Text Gradient on Soft Background */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #8A641A 0%, #B88E38 40%, #5E430D 80%, #9E7422 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-shimmer {
+  background: linear-gradient(90deg, #7A5814 0%, #D4AF37 50%, #7A5814 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #F5E5C0 0%, #D4AF37 50%, #997A15 100%);
+}
+
+.bg-gold-btn {
+  background: linear-gradient(135deg, #DFBE6F 0%, #C4973B 50%, #A67922 100%);
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+.bg-gold-btn:hover {
+  background: linear-gradient(135deg, #E8CD89 0%, #D4A74C 50%, #B58830 100%);
+  box-shadow: 0 4px 20px rgba(184, 142, 56, 0.35);
+}
+
+.border-gold-subtle {
+  border-color: rgba(184, 142, 56, 0.22);
+}
+
+.border-gold-glow {
+  border-color: rgba(184, 142, 56, 0.5);
+  box-shadow: 0 0 15px rgba(184, 142, 56, 0.12);
+}
+
+.gold-glow {
+  box-shadow: 0 10px 30px rgba(184, 142, 56, 0.12);
+}
+
+.gold-glow-lg {
+  box-shadow: 0 20px 50px rgba(184, 142, 56, 0.18);
+}
+
+.spotlight {
+  background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, rgba(250, 247, 242, 0) 70%);
+}
+
+.spotlight-card {
+  background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.05) 0%, rgba(255, 255, 255, 1) 75%);
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Custom Soft Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9D0C1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B88E38;
+}
